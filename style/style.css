@@ -264,7 +264,7 @@ header .close-btn {
 }
 .select h2 {
   color: #888484;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-top: 3rem;
   text-decoration: line-through;
@@ -292,7 +292,7 @@ header .close-btn {
   }
   .select h2 {
     color: #888484;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-top: 1rem;
     text-decoration: line-through;
@@ -334,6 +334,245 @@ header .close-btn {
     margin-left: 0rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+}
+.Started {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.connect,
+.workspace {
+  flex: 1;
+  width: 40%;
+  min-width: 300px;
+  text-align: center;
+  background-color: #fff;
+  padding: 4rem 4rem;
+  border-radius: 20px;
+}
+
+.connect h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.connect p {
+  color: #555;
+  font-size: 27px;
+  margin-bottom: 3rem;
+  background-color: #fff;
+}
+.connect h4 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.connect .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 5rem;
+  background-color: #fff;
+}
+.connect .buttons button {
+  width: 50%;
+  padding: 19px 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10rem;
+}
+.connect .buttons .gitlab {
+  background-color: #fc6d26;
+}
+.connect .buttons .github {
+  background-color: #000;
+}
+.connect .buttons .bitbucket {
+  background-color: #2684FF;
+}
+.connect .prefix {
+  margin-top: 20px;
+  color: #555;
+  background-color: #fff;
+}
+.connect .gitpod-url {
+  background-color: #f4dbb8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  padding: 12px 40px;
+  font-size: 18px;
+}
+
+.workspace h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.workspace p {
+  color: #555;
+  font-size: 27px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.workspace ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+}
+.workspace ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f6f6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.workspace ul li span {
+  font-weight: 500;
+  background-color: #fff;
+  font-size: 18px;
+}
+.workspace ul li button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .Started {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+    width: 90%;
+  }
+  .connect,
+  .workspace {
+    flex: 1;
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+  }
+  .connect h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  .connect p {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 3rem;
+    background-color: #fff;
+  }
+  .connect h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .connect .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 5rem;
+    background-color: #fff;
+  }
+  .connect .buttons button {
+    width: 100%;
+    padding: 12px 30px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 0rem;
+  }
+  .connect .buttons .gitlab {
+    background-color: #fc6d26;
+  }
+  .connect .buttons .github {
+    background-color: #000;
+  }
+  .connect .buttons .bitbucket {
+    background-color: #2684FF;
+  }
+  .connect .prefix {
+    margin-top: 20px;
+    color: #555;
+    background-color: #fff;
+  }
+  .connect .gitpod-url {
+    background-color: #f4dbb8;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    padding: 12px 40px;
+    font-size: 18px;
+  }
+  .workspace h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  .workspace p {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  .workspace ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background-color: #fff;
+  }
+  .workspace ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .workspace ul li span {
+    font-weight: 500;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  .workspace ul li button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 8px;
+    cursor: pointer;
   }
 }
 .Think {
