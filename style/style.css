@@ -728,6 +728,16 @@ footer .footer_box img {
     font-size: 12px;
     justify-content: center;
   }
+  .footer_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 12px;
+    background-color: #fff;
+  }
+  .footer_box img {
+    background-color: #fff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
