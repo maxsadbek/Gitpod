@@ -315,6 +315,27 @@ header .close-btn {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  .remote {
+    text-align: center;
+    margin-top: 7rem;
+    width: 90%;
+  }
+  .remote h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .remote img {
+    width: 100%;
+  }
+  .remote p {
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
 .Think {
   display: flex;
   align-items: center;

@@ -18,3 +18,28 @@
     }
 
 }
+
+@media screen and (max-width:600px) {
+    .remote {
+        text-align: center;
+        margin-top: 7rem;
+        width: 90%;
+
+
+        h1 {
+            font-size: $rem2;
+            margin-bottom: $rem2;
+        }
+        img{
+            width: 100%;
+        }
+        p {
+            font-size: $rem1;
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: $rem1;
+            margin-bottom: $rem2;
+        }
+
+    }
+}
