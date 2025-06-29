@@ -1,0 +1,37 @@
+@use'../variable' as *;
+
+.logo_slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo_track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: logoScroll 25s linear infinite;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo_track img {
+    height: auto;
+    width: auto;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.logo_track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@keyframes logoScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
