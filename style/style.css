@@ -700,6 +700,9 @@ footer {
   width: 100%;
   height: 200px;
   padding: 4rem 4rem;
+  margin-top: 5rem;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 footer div {
   display: flex;
