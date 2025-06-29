@@ -1,13 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #F5F3F4;
 }
 
 .container {
   max-width: 1450px;
   width: 100%;
   margin: 0 auto;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  align-items: center;
+}
+header .navbar .home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+header .navbar .navbar_menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+header .navbar button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: #000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+header .navbar button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 10px #000;
+}
+header .navbar button:active {
+  transform: translateY(4px);
 }
 
 /*# sourceMappingURL=style.css.map */
