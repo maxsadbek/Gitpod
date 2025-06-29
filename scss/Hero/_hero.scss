@@ -44,3 +44,31 @@ header {
         }
     }
 }
+
+@media screen and (max-width:600px) {
+
+    header {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: $rem2 0;
+            align-items: center;
+
+            .home {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: $rem12;
+                font-weight: $weight2;
+            }
+
+            .navbar_menu {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+    }
+}

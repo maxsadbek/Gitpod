@@ -51,4 +51,26 @@ header .navbar button:active {
   transform: translateY(4px);
 }
 
+@media screen and (max-width: 600px) {
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+  }
+  header .navbar .home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  header .navbar .navbar_menu {
+    display: none;
+  }
+  header .navbar button {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
