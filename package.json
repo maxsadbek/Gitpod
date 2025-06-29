@@ -8,6 +8,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
+    "scss": "sass scss/style.scss:style/style.css",
     "sass": "sass --watch scss/style.scss:style/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
