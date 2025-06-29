@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -13,6 +14,9 @@
   margin: 0 auto;
 }
 
+header {
+  /* Responsive uchun: asosiy navbar menyuni yashiramiz */
+}
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,6 +54,53 @@ header .navbar button:hover {
 header .navbar button:active {
   transform: translateY(4px);
 }
+header .navbar i {
+  display: none;
+}
+header .sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  /* Dastlab yashirin bo‘ladi */
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.4s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+header .sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+header .sidebar ul li {
+  margin: 20px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+header .sidebar.active {
+  right: 0;
+  /* Chiqariladi */
+}
+@media (max-width: 768px) {
+  header .navbar_menu_box {
+    display: none;
+  }
+  header #menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+header .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
   header .navbar {
@@ -70,6 +121,17 @@ header .navbar button:active {
   }
   header .navbar button {
     display: none;
+  }
+  header .navbar i {
+    display: block;
+    font-size: 30px;
+    transition: all 0.4s ease;
+  }
+  header .navbar i:hover {
+    transform: translateY(-4px);
+  }
+  header .navbar i:active {
+    transform: translateY(4px);
   }
 }
 

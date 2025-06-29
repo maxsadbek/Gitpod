@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./style/style.css">
     <!-- this is favicon -->
     <link rel="shortcut icon" href="./img/png/favicon.png" type="image/x-icon">
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,7 +22,7 @@
                 <img src="./img/svg/Vector (1).svg" alt="">
                 <h2>Gitpod</h2>
             </div>
-            <div>
+            <div class="navbar_menu_box">
                 <ul class="navbar_menu">
                     <li>Features</li>
                     <li>Pricing</li>
@@ -29,9 +33,38 @@
                 </ul>
             </div>
             <button>Login</button>
-
+            <i class="ri-menu-line" id="menu-icon"></i>
         </nav>
+
+        <!-- Sidebar menyu (ung tomondan chiqadi) -->
+        <div class="sidebar" id="sidebar">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+                <li>Docs</li>
+                <li>Changelog</li>
+                <li>We're hiring *</li>
+            </ul>
+        </div>
+
     </header>
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("close-btn");
+
+        menuIcon.addEventListener("click", () => {
+            sidebar.classList.toggle("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+        });
+    </script>
+
+
 </body>
 
 </html>
