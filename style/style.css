@@ -695,5 +695,39 @@ header .close-btn {
     transform: translateX(-50%);
   }
 }
+footer {
+  background-color: #fff;
+  width: 100%;
+  height: 200px;
+  padding: 4rem 4rem;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+footer .footer_box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 18px;
+  background-color: #fff;
+}
+footer .footer_box img {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  footer .flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 2rem;
+  }
+  .footer_box {
+    font-size: 12px;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
