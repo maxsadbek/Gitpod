@@ -1,0 +1,136 @@
+@use'../variable' as*;
+
+.always {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $rem4;
+
+    .always_box {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: #555;
+            font-weight: 500;
+            width: 70%;
+            margin-top: $rem2;
+            margin-bottom: $rem3;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: $rem09;
+            margin-bottom: $rem1;
+
+            button {
+                padding: 7px 25px;
+                font-size: $rem1;
+                background-color: $orange;
+                border-radius: 20px;
+                font-size: $rem12;
+                border: none;
+            }
+
+            p {
+                text-align: start;
+                font-size: $rem12;
+                width: 30%;
+                color: #555;
+            }
+        }
+
+        .alwat_img {
+            gap: $rem3;
+
+            img {
+                margin-left: $rem1;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
+
+                &:active {
+                    transform: translateY(4px)
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .always {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: $rem4;
+
+        .always_box {
+            margin-top: $rem2;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                color: #555;
+                font-weight: 500;
+                width: 90%;
+                margin-top: $rem2;
+                margin-bottom: $rem3;
+            }
+
+            .btn {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin-bottom: $rem1;
+                text-align: start;
+
+                button {
+                    padding: 10px 25px;
+                    font-size: $rem1;
+                    background-color: $orange;
+                    border-radius: 20px;
+                    font-size: $rem12;
+                    border: none;
+                }
+
+                p {
+                    text-align: start;
+                    font-size: $rem1;
+                    width: 100%;
+                    color: #555;
+                }
+            }
+
+            .alwat_img {
+                gap: $rem3;
+
+                img {
+                    transition: all 0.2s ease;
+                    margin-left: $rem1;
+
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+
+                    &:active {
+                        transform: translateY(4px)
+                    }
+                }
+            }
+        }
+
+        .alway_imgs {
+            width: 100%;
+        }
+    }
+}

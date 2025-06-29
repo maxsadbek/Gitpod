@@ -14,6 +14,117 @@
   margin: 0 auto;
 }
 
+.always {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.always .always_box h1 {
+  font-size: 5rem;
+}
+.always .always_box h3 {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: 500;
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.always .always_box .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+.always .always_box .btn button {
+  padding: 7px 25px;
+  font-size: 1rem;
+  background-color: #ffad33;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  border: none;
+}
+.always .always_box .btn p {
+  text-align: start;
+  font-size: 1.2rem;
+  width: 30%;
+  color: #555;
+}
+.always .always_box .alwat_img {
+  gap: 3rem;
+}
+.always .always_box .alwat_img img {
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+}
+.always .always_box .alwat_img img:hover {
+  transform: translateY(-4px);
+}
+.always .always_box .alwat_img img:active {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+  .always {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .always .always_box {
+    margin-top: 2rem;
+  }
+  .always .always_box h1 {
+    font-size: 2rem;
+  }
+  .always .always_box h3 {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .always .always_box .btn {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+  .always .always_box .btn button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #ffad33;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+  }
+  .always .always_box .btn p {
+    text-align: start;
+    font-size: 1rem;
+    width: 100%;
+    color: #555;
+  }
+  .always .always_box .alwat_img {
+    gap: 3rem;
+  }
+  .always .always_box .alwat_img img {
+    transition: all 0.2s ease;
+    margin-left: 1rem;
+  }
+  .always .always_box .alwat_img img:hover {
+    transform: translateY(-4px);
+  }
+  .always .always_box .alwat_img img:active {
+    transform: translateY(4px);
+  }
+  .always .alway_imgs {
+    width: 100%;
+  }
+}
 header {
   /* Responsive uchun: asosiy navbar menyuni yashiramiz */
 }
