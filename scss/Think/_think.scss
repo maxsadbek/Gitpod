@@ -1,0 +1,106 @@
+@use'../variable' as*;
+
+.Think {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $rem8;
+
+    .Think_box {
+        width: 50%;
+
+        h2 {
+            font-size: $rem24;
+            margin-bottom: $rem15;
+        }
+
+        P {
+            font-size: $rem15;
+            color: #888;
+            margin-bottom: $rem7;
+        }
+
+        .btn1 {
+
+            button {
+                padding: 12px 30px;
+                transition: all 0.3s ease;
+                border-radius: 12px;
+                font-size: $rem1;
+                border: none;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
+
+                &:active {
+                    transform: translateY(4px);
+                }
+            }
+
+            .button {
+                background-color: $orange;
+            }
+
+            .button1 {
+                background-color: $pink;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .Think {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: $rem8;
+        width: 90%;
+        img{
+            width: 100%;
+        }
+        .Think_box {
+            width: 100%;
+
+            h2 {
+                font-size: $rem2;
+                margin-bottom: $rem15;
+            }
+
+            P {
+                font-size: $rem09;
+                color: #888;
+                margin-bottom: $rem4;
+            }
+
+            .btn1 {
+                flex-direction: column;
+                button {
+                    padding: 12px 30px;
+                    transition: all 0.3s ease;
+                    border-radius: 12px;
+                    font-size: $rem1;
+                    border: none;
+                    margin-bottom: $rem1;
+                    width: 70%;
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+
+                    &:active {
+                        transform: translateY(4px);
+                    }
+                }
+
+                .button {
+                    background-color: $orange;
+                }
+
+                .button1 {
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
@@ -297,6 +297,92 @@ header .close-btn {
     margin-top: 1rem;
     text-decoration: line-through;
     text-decoration-thickness: 2px;
+  }
+}
+.Think {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+.Think .Think_box {
+  width: 50%;
+}
+.Think .Think_box h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.Think .Think_box P {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 7rem;
+}
+.Think .Think_box .btn1 button {
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  font-size: 1rem;
+  border: none;
+}
+.Think .Think_box .btn1 button:hover {
+  transform: translateY(-4px);
+}
+.Think .Think_box .btn1 button:active {
+  transform: translateY(4px);
+}
+.Think .Think_box .btn1 .button {
+  background-color: #ffad33;
+}
+.Think .Think_box .btn1 .button1 {
+  background-color: #ff8ab7;
+}
+
+@media screen and (max-width: 600px) {
+  .Think {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 8rem;
+    width: 90%;
+  }
+  .Think img {
+    width: 100%;
+  }
+  .Think .Think_box {
+    width: 100%;
+  }
+  .Think .Think_box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .Think .Think_box P {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 4rem;
+  }
+  .Think .Think_box .btn1 {
+    flex-direction: column;
+  }
+  .Think .Think_box .btn1 button {
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    font-size: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    width: 70%;
+  }
+  .Think .Think_box .btn1 button:hover {
+    transform: translateY(-4px);
+  }
+  .Think .Think_box .btn1 button:active {
+    transform: translateY(4px);
+  }
+  .Think .Think_box .btn1 .button {
+    background-color: #ffad33;
+  }
+  .Think .Think_box .btn1 .button1 {
+    background-color: #ff8ab7;
   }
 }
 
