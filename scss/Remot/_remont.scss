@@ -1,0 +1,20 @@
+@use'../variable' as*;
+
+.remote {
+    text-align: center;
+    margin-top: 15rem;
+
+    h1 {
+        font-size: $rem3;
+        margin-bottom: $rem2;
+    }
+
+    p {
+        font-size: $rem12;
+        width: 60%;
+        margin-left: 18rem;
+        margin-top: $rem1;
+        margin-bottom: $rem2;
+    }
+
+}
