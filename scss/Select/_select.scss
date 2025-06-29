@@ -1,0 +1,65 @@
+@use'../variable' as*;
+
+.select {
+    text-align: center;
+    margin-top: $rem6;
+
+    h1 {
+        color: $black;
+        font-size: $rem3;
+        margin-top: $rem3;
+    }
+
+    .hover-text span {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        cursor: default;
+    }
+
+    .hover-text span:hover {
+        transform: translateY(-4px);
+    }
+
+    h2 {
+        color: #888484;
+        font-size: $rem4;
+        font-weight: $weight4;
+        margin-top: $rem3;
+        text-decoration: line-through;
+        text-decoration-thickness: 4px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .select {
+        width: 90%;
+        text-align: center;
+        margin-top: $rem5;
+
+        h1 {
+            color: $black;
+            font-size: $rem2;
+            margin-top: $rem1;
+        }
+
+        .hover-text span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+
+        .hover-text span:hover {
+            transform: translateY(-8px);
+        }
+
+        h2 {
+            color: #888484;
+            font-size: $rem15;
+            font-weight: $weight4;
+            margin-top: $rem1;
+            text-decoration: line-through;
+            text-decoration-thickness: 2px;
+        }
+    }
+}

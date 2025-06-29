@@ -245,5 +245,59 @@ header .close-btn {
     transform: translateY(4px);
   }
 }
+.select {
+  text-align: center;
+  margin-top: 6rem;
+}
+.select h1 {
+  color: #000;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.select .hover-text span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.select .hover-text span:hover {
+  transform: translateY(-4px);
+}
+.select h2 {
+  color: #888484;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .select {
+    width: 90%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .select h1 {
+    color: #000;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .select .hover-text span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  .select .hover-text span:hover {
+    transform: translateY(-8px);
+  }
+  .select h2 {
+    color: #888484;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
